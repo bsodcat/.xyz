@@ -1,65 +1,79 @@
-<!--
-
--->
 <!DOCTYPE html>
-<html lang="en">
-	<style type="text/css">
-		html{
-			background-image: url('styles/img/bg_grid.gif');
-			background-repeat: repeat;
-			background-attachment: fixed;
-    		background-position: center;
-    		background-size: center;
-			max-width: 100%;
-		}
-	</style>
+<html lang="en" class="home-bg">
 	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<link rel="stylesheet" type="text/css" href="styles/style.css"/>
-		<link rel="icon" href="styles/img/favicons/avatar-12.png" sizes="42x42" type="image/png"/>
-		<title>Welcome!</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="styles/style.css"/>
+		<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+		<title>:D</title>
 	</head>
-	<header>
-		<img src="styles/img/moshed-weblogo.gif">
-	</header>
+<body>
 
-	<nav class="nav">
-		<ul>
-			<li><a href="about.html" class="about">about</a></li><br>
-			<li><a href="media.html" class="media">media</a></li><br>
-			<li><a href="links.html" class="links">links</a></li><br>
-			<li><a href="info.html" class="info">info.</a></li><br>
-			<li><a href="other.html" class="other">other</a></li>
-		</ul>
-	</nav>
+<!-- Logo -->
+<div class="logo">
+	<h1 style="font-size:8vw;">bsodcat</h1>
+</div>
 
-	
-		<section class="banner">
-			<div class="center">
-			<div id="imgHolder1">
-			<div class="welcome">
-			<h2>Welcome to my<br><span>h e a d s p a c e</span></h2>
-		</section>
-	
+<!-- Navbar -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Media</i></button>
+    <div class="subnav-content" style="background-color: #5ee;">
+      <a href="writing.html">Writing</a>
+      <a href="music.html">Music</a>
+      <a href="photography.html">Photography</a>
+      <a href="anime.html">Anime</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Social</button>
+    <div class="subnav-content" style="background-color: #5ee;">
+      <a href="https://www.youtube.com/channel/UCxIiNyld7DnPzmBQHCxvxiw" target="_blank">Youtube</a>
+      <a href="https://soundcloud.com/bsodcat" target="_blank">Soundcloud</a>
+      <a href="bc.html">Bandcamp</a>
+    </div>
+  </div>
+  <a href="contact.html">Contact</a>
+</div>
 
-	<body class="center">
-		<article>
-			<h3>Interesting Title</h3>
-			<aside>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</aside>
-		</article>
-	</body><br><br><br><br>
+<!-- Showcase -->
+<section class="container">
+	<div class="showcase item">
+			<h2>
+				::welcome to my headspace::
+			</h2><br>
+		<div class="flex-container">
+			<p class="flex-child">
+				&emsp;This is a website made for containing my creativity and curing my lack of organization, I surely hope any of it is comprehensible or bearable. <br>
+			</p><br>
+		</div>
+			<br><p class="divider">⎼|⎼</p><br>
+		<div class="flex-child">
+			<img class="contain-center" src="styles/img/star-trek-insurrection.jpg">
+			<p style="font-style: italic;" class="contain-center">
+				One of the most memorable and earliest Star Trek movies in my past, right next to the original series movies, not to mention the PlayStation 2 Star Trek Voyager video game, it was my introduction to Star Trek and I wouldn't have it any other way.
+			</p>
+			<br><p class="divider">⎼|⎼</p><br>
+			<img class="gif-container" src="styles/img/picard-dancing.gif">
+		</div>
+			<br><p class="divider">⎼|⎼</p><br>
+	</div>
+</section>
 
-	<footer>
-		<small>&copy; Copyright 2022, Nicholas RyLee Achterberg</small>
-	</footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=OUR_GA_ID"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'OUR_GA_ID', {cookie_flags: 'SameSite=None;Secure'});
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+</style> 
+
+</body>
 </html>
