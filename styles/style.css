@@ -51,6 +51,8 @@ html, body{
 
 .cb-bg{background: url(img/dithered-cowboy.png);}
 
+.blog-bg{background: url(img/musiman.png);}
+
 ul{
 	list-style-type: none;
 }
@@ -194,13 +196,12 @@ img{
 
  /* The side navigation menu */
 .LEFTNAV {
-	border: 3px solid white;
   margin: none;
   padding: 0;
-  top:  0;
+  top:  1;
   left: 0;
   width: 160px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.95);
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -217,8 +218,8 @@ img{
 
 /* Active/current link */
 .LEFTNAV a.active {
-  background-color: #555;
-  color: #5ee;
+  background-color: #55f;
+  color: #fff;
 }
 
 /* Links on mouse-over */
@@ -258,11 +259,11 @@ div.content {
 .RIGHTNAV {
   margin: none;
   padding: 0;
-  top:  0;
+  top:  1;
   right: 0;
   padding: 0;
   width: 160px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.95);
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -279,7 +280,7 @@ div.content {
 
 /* Active/current link */
 .RIGHTNAV a.active {
-  background-color: #555;
+  background-color: #55f;
   color: white;
 }
 
@@ -336,7 +337,7 @@ div.content {
 	flex-direction: column;
 	max-width: 1200px;
 	align-self: center;
-	background: rgb(0, 0, 0, .8);
+	background: rgba(0, 0, 0, .95);
 	padding: 10px;
 	position: relative;
 	margin: 0 auto;
@@ -403,3 +404,8 @@ div.content {
 	font-size: 30px;
 	margin: 10px;
 }
+
+
+
+
+
