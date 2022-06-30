@@ -35,7 +35,7 @@ html, body{
 	padding:0; margin:0; height:100%;
 }
 
-.home-bg{background: url(img/dithered-pool.png);}
+.home-bg{background: url(img/dithered-dark-marble.png);}
 
 .writing-bg{background: url(img/dithered-red-tree.png);}
 
@@ -90,17 +90,22 @@ p{
 img .logo{
 }
 .logo{
-	background: url(img/dithered-dark-marble.png);
+	background: url(img/grid.gif);
 	background-attachment: fixed;
   background-repeat: repeat;
-	font-family: "Zefani";
-  font-size: 3em;
-  width: 100%;
-  padding-top: 54px;
-  padding-bottom: 12px;
+  font-family: "Zefani";
+  font-size: 1em;
+  width: auto;
+  padding-top: 28px;
+  padding-bottom: 16px;
   z-index: 0;
   justify-content: center;
   display: flex;
+}
+
+h2{
+  width: auto;
+  font-size: 1em;
 }
 
 img{
@@ -118,7 +123,7 @@ img{
                                                           
                                                           */
 
-/*HOME*/
+/*HOME
 
 
 .navbar {
@@ -173,6 +178,8 @@ img{
   display: block;
 }
 
+*/
+
 /*                                                                  
                       ,,    ,,    ,,          ,,                  
 `7MMF'   `7MF' mm     db  `7MM    db   mm     db                  
@@ -184,6 +191,131 @@ img{
    `bmmmmd"'   `Mbmo.JMML..JMML..JMML. `Mbmo.JMML.`Mbmmd' M9mmmP' 
                                                                   
                                                                   */
+
+ /* The side navigation menu */
+.LEFTNAV {
+	border: 3px solid white;
+  margin: none;
+  padding: 0;
+  top:  0;
+  left: 0;
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 2;
+}
+
+/* Sidebar links */
+.LEFTNAV a {
+  display: block;
+  color: white;
+  padding: 4px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.LEFTNAV a.active {
+  background-color: #555;
+  color: #5ee;
+}
+
+/* Links on mouse-over */
+.LEFTNAV a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 160px;
+  padding: 1px 16px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .LEFTNAV {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .LEFTNAV a {float: right;}
+  div.content {margin-right: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .LEFTNAV a {
+    text-align: center;
+    float: none;
+  }
+} 
+
+
+
+/* The side navigation menu */
+.RIGHTNAV {
+  margin: none;
+  padding: 0;
+  top:  0;
+  right: 0;
+  padding: 0;
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 2;
+}
+
+/* Sidebar links */
+.RIGHTNAV a {
+  display: block;
+  color: white;
+  padding: 4px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.RIGHTNAV a.active {
+  background-color: #555;
+  color: white;
+}
+
+/* Links on mouse-over */
+.RIGHTNAV a:hover:not(.active) {
+  background-color: #555;
+  font-style: italic;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 10px;
+  padding: 1px 16px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .RIGHTNAV {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .RIGHTNAV a {float: right;}
+  div.content {margin-right: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} 
+
+
 
 .btn{
 	cursor: pointer;
@@ -199,32 +331,29 @@ img{
 }
 
 .item{
-	/*border: 3px solid magenta;*/
 	justify-items: center;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	max-width: 1700px;
+	max-width: 1200px;
 	align-self: center;
-	background: rgb(0, 0, 0, .95);
+	background: rgb(0, 0, 0, .8);
 	padding: 10px;
 	position: relative;
 	margin: 0 auto;
 }
 
 .showcase{
-	max-width: 900px;
+	max-width: 627px;
+  display: block;
 }
 
 .contain-center{
-	/*border: 3px solid blue;*/
 	text-align: center;
 	align-self: center;
 	justify-items: center;
 }
 
 .gif-container{
-	/*border: 3px solid lime;*/
 	height: auto;
 	display: flex;
 	align-self: center;
@@ -233,7 +362,6 @@ img{
 }
 
 .wall-container{
-	/*border: 3px solid lime;*/
 	height: auto;
 	display: flex;
 	align-self: center;
@@ -242,7 +370,6 @@ img{
 }
 
 .poster-container{
-	/*border: 3px solid lime;*/
 	height: auto;
 	display: flex;
 	align-self: center;
@@ -251,14 +378,12 @@ img{
 }
 
 .flex-container {
-	/*border: 3px solid red;*/
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
 .flex-child {
-	/*border: 3px solid yellow;*/
   flex-direction: row;
   flex: 1;
   padding: 10px;
@@ -272,7 +397,6 @@ img{
 }
 
 .divider{
-	/*border: 3px solid white;*/
 	text-align: center;
 	align-self: center;
 	justify-items: center;
